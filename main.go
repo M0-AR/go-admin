@@ -1,1 +1,7 @@
-package go_admin
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello World")
+}
