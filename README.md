@@ -4,3 +4,6 @@
 
 #### API Postman test
 ![postman](go-admin-postman-test.JPG )
+
+
+This app is being developed by following the guy from this channel [Youtube](https://www.youtube.com/c/ScalableScripts)
