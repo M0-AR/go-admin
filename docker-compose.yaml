@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+
+
+  db:
+    image: mysql:5.7.22
+    restart: always
+    environment:
+      MYSQL_DATABASE: go_admin
+      MYSQL_USER: md
+      MYSQL_PASSWORD: rootroot
+      MYSQL_ROOT_PASSWORD: rootroot
+    volumes:
+      - .dbdata:/var/lib/mysql
+    ports:
+      - "33066:3306"
